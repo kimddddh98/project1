@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <style>
+  
+        
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function(){
+            // 사이즈
+            $(".size button:nth-of-type(1)").click(function(){
+                $(".payment").hide();
+                $("#payone").show();
+            });
+            $(".size button:nth-of-type(2)").click(function(){
+                $(".payment").hide();
+                $("#paytwo").show();
+            });
+            $(".size button:nth-of-type(3)").click(function(){
+                $(".payment").hide();
+                $("#paythree").show();
+            });
+            $(".size button:nth-of-type(4)").click(function(){
+                $(".payment").hide();
+                $("#payfour").show();
+            });
+            $(".size button:nth-of-type(5)").click(function(){
+                $(".payment").hide();
+                $("#payfive").show();
+            });
+            $(".size button:nth-of-type(6)").click(function(){
+                $(".payment").hide();
+                $("#paysix").show();
+            });
+            $(".size button:nth-of-type(7)").click(function(){
+                $(".payment").hide();
+                $("#payseven").show();
+            });
+            $(".size button:nth-of-type(8)").click(function(){
+                $(".payment").hide();
+                $("#payeight").show();
+            });
+            $(".size button:nth-of-type(9)").click(function(){
+                $(".payment").hide();
+                $("#paynine").show();
+            });
+            $(".size button:nth-of-type(10)").click(function(){
+                $(".payment").hide();
+                $("#payten").show();
+            });
+            $(".size button").click(function(){
+              $("section").css("height","700px");
+            });
+            $(".top button").click(function(){
+                $(".payment").hide();
+                $("section").css("height","600px");
+            });
+
+            // 리뷰,문의
+            $("#review .textboxd ul li a").click(function(){
+                $("#review .textboxd ul li a").css("background-color","#fff");
+                $("#review .textboxd ul li a").css("color","#333");
+                $("#review .textboxd ul li a").css("border","1px solid #666");
+            });
+            $("#qna .textboxd ul li a").click(function(){
+                $("#qna .textboxd ul li a").css("background-color","#fff");
+                $("#qna .textboxd ul li a").css("color","#333");
+                $("#qna .textboxd ul li a").css("border","1px solid #666");
+            });
+            $("#review .textboxd ul li:nth-of-type(1) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#review .textboxd ul li:nth-of-type(2) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#review .textboxd ul li:nth-of-type(3) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#review .textboxd ul li:nth-of-type(4) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#review .textboxd ul li:nth-of-type(5) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#qna .textboxd ul li:nth-of-type(1) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#qna .textboxd ul li:nth-of-type(2) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#qna .textboxd ul li:nth-of-type(3) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#qna .textboxd ul li:nth-of-type(4) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+            $("#qna .textboxd ul li:nth-of-type(5) a").click(function(){
+                $(this).css("background-color","#333");
+                $(this).css("color","#fff");
+                $(this).css("border","2px solid #aaa");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니(0)</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">마이페이지</a></li>
+                
+            </ul>
+        </div>
+        <div id="logo">
+            <a href="#">
+            <img src="img/common/logo.png" alt="">
+
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a href="#">축구화</a>
+                    <ul>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">그라운드</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">의류</a>
+                    <ul>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">트레이닝복</a></li>
+                        <li><a href="#">기능성</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">유니폼</a>
+                    <ul>
+                        <li><a href="#">대표팀</a></li>
+                        <li><a href="#">클럽팀</a></li>
+                        <li><a href="#">반팔</a></li>
+                        <li><a href="#">긴팔</a></li>
+                        <li><a href="#">쇼츠</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">용품</a>
+                    <ul>
+                        <li><a href="#">축구공</a></li>
+                        <li><a href="#">보호대</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">GK용품</a></li>
+                        <li><a href="#">기타용품</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">WOMEN/KIDS</a>
+                    <ul>
+                        <li><a href="#">축구화</a></li>
+                        <li><a href="#">의류</a></li>
+                        <li><a href="#">용품</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">브랜드관</a>
+                    <ul>
+                        <li><a href="#">나이키</a></li>
+                        <li><a href="#">아디다스</a></li>
+                        <li><a href="#">미즈노</a></li>
+                        <li><a href="#">브랜드전체</a></li>
+
+                    </ul></li>
+            </ul>
+        </nav>
+      <form>
+        <div id="search">
+            <input type="search" name="search" placeholder="search" maxlength="10">
+           
+            <input type="image" src="img/main/search.png" alt="검색">
+        </div>
+        </form>
+        
+        
+    </header>
+ 
+    <section>
+        <div id="a">
+            <div id="form">
+            <form>
+                <input type="radio" value="left" name="img" checked>
+                <input type="radio" value="right" name="img">
+            <div id="img">
+                <img src="img/best/BEST1.jpg" alt="one">
+                <img src="img/best/best1_1.jpg" alt="two">
+             
+
+            </div>
+            </form>
+        </div>
+            <div id="shop">
+                <img src="img/sub/nike.png" alt="">
+                <h1>머큐리얼 슈퍼플라이 8 엘리트 FG</h1>
+             
+                <table>
+                    <tr>
+                        <th>판매가</th>
+                        <th>:</th>
+
+                        <td><span style="font-size: 20px; font-weight: bold;">
+                            319,000
+                        </span>원 <span class="line">339,000원</span></td>
+                    </tr>
+                    <tr>
+                        <th>사일로</th>
+                        <th>:</th>
+                        <td>mercurial</td>
+                    </tr>
+                    <tr>
+                        <th>성별</th>
+                        <th>:</th>
+
+                        <td>공용</td>
+                    </tr>
+                    <tr>
+                        <th>소재</th>
+                        <th>:</th>
+
+                        <td>겉감:폴리에스터 100%/합성수지</td>
+                    </tr>
+                    <tr>
+                        <th>색상</th>
+                        <th>:</th>
+
+                        <td>BLACKENED BLUE/남색</td>
+                    </tr>
+                    <tr>
+                        <th>배송</th>
+                        <th>:</th>
+                        <td>오전 11시 이전 입금시 당일발송</td>
+                    </tr>
+                </table>
+                <h3>사이즈 선택</h3>
+                <a href="#">사이즈가이드</a>
+               <div class="size">
+                <button type="button">245</button>
+                <button type="button">250</button>
+                <button type="button">255</button>
+                <button type="button">260</button>
+                <button type="button">265</button><br>
+                <button type="button">270</button>
+                <button type="button">275</button>
+                <button type="button">280</button>
+                <button type="button">285</button>
+                <button type="button">290</button>
+               </div>
+             
+               <div class="payment" id="payone">
+                   <div class="top">
+                       <p>245</p>
+                       <p>쿠폰</p>
+                       <select name="count" class="option">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                           <option value="9">9</option>
+                       </select>
+                       <p>319,000 원</p>
+                       <button class="cancle">x</button>
+                   </div>
+                   <div class="bottom">
+                       <h3>총 합계금액</h3>
+                       <h4>319,000 원</h4>
+                   </div>
+              
+               </div>
+               <div class="payment" id="paytwo">
+                <div class="top">
+                    <p>250</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+             <div class="payment" id="paythree">
+                <div class="top">
+                    <p>255</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="payfour">
+                <div class="top">
+                    <p>260</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            
+            <div class="payment" id="payfive">
+                <div class="top">
+                    <p>265</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="paysix">
+                <div class="top">
+                    <p>270</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="payseven">
+                <div class="top">
+                    <p>275</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="payeight">
+                <div class="top">
+                    <p>280</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="paynine">
+                <div class="top">
+                    <p>285</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+            <div class="payment" id="payten">
+                <div class="top">
+                    <p>290</p>
+                    <p>쿠폰</p>
+                    <select name="count" class="option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <p>319,000 원</p>
+                    <button class="cancle">x</button>
+                </div>
+                <div class="bottom">
+                    <h3>총 합계금액</h3>
+                    <h4>319,000 원</h4>
+                </div>
+           
+            </div>
+
+               <form id="buybt">
+               <input type="button" value="구매하기" >
+               <input type="button" value="장바구니">
+               <input type="button" value="찜">
+            </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 상품상세정보~상품문의 -->
+    <div id="detail" class="aclass">
+        <ul>
+            <li><a href="#detail">
+                상품상세정보
+            </a></li>
+            <li><a href="#post">
+                배송안내
+            </a></li>
+            <li><a href="#review">
+                상품후기
+            </a></li>
+            <li><a href="#qna">
+                상품문의
+            </a></li>
+        </ul>
+        <h2>상품상세정보</h2>
+        <div class="textbox">
+            <ul>
+                <li>색상 : BLACKENED BLUE/남</li>
+                <li>소재 : 겉감:폴리에스터 100%/합성수지, 안감:나일론 100%/합성가죽 창:합성수지
+                </li>
+                <li>모두를 제치고 질주하다.
+                    나이키 머큐리얼 베이퍼 14 엘리트 AG는 처음부터 끝까지 최고의 속도로 플레이할 수 있는
+                    특별한 구성 요소로 새로운 스타일을 연출합니다.
+                    </li>
+                    <li>
+                        안창의 쿠셔닝이 지속적인 편안함을 선사하며, 혁신적인 플레이트는 빠른 속도에서 더욱
+                    민첩한 컷 동작이 가능한 즉각적인 반응성을 제공합니다.
+                    </li>
+                <li>빈틈없는 지지력
+                    가볍고 통기성 좋은 플라이니트 갑피가 발과 함께 늘어나 맞춤 핏을 선사합니다.
+                    </li>
+                <li>전천후 터치
+                    ACC(올 컨디션 컨트롤) 기술이 적용되어 비가 오거나 건조한 날씨에도 안정적으로 공을
+                    터치할 수 있습니다.
+                    </li>
+                <li>지면을 박차고 날아오르다
+                    미세한 홈이 파인 나이키 에어로트랙 플레이트가 폭발적인 가속력을 낼 수 있게 해줍니다.
+                    쉐브론 패턴의 스터드는 발을 디딜 때마다 다방향 접지 발휘합니다.
+                    </li>
+            </ul>
+        </div>
+    
+    </div>
+
+    <div id="post" class="aclass">
+        <ul>
+            <li><a href="#detail">
+                상품상세정보
+            </a></li>
+            <li><a href="#post">
+                배송안내
+            </a></li>
+            <li><a href="#review">
+                상품후기
+            </a></li>
+            <li><a href="#qna">
+                상품문의
+            </a></li>
+        </ul>
+        <h2>배송안내</h2>
+        <div class="textbox" id="textb">
+            <ul>
+                <li>오전 11시 이전 입금 시 당일 발송</li>
+                <li>기본배송료 : 3,000원
+                </li>
+                <li>GOLD등급 이상부터는 무료배송 (*단 교환 및 반품 배송비는 동일 적용입니다.)
+                    </li>
+                    <li>
+                        배송일 : 입금확인일로부터 5일 이내 (주중)
+                    </li>
+                <li>도서,산간,오지 일부지역은 배송비가 추가될 수 있으며,배송기간이 1~2일 더 소요될 수 있습니다.</li>
+                <li>배송예정일은 주문시점(주문순서)에 따른 유동성이 발생하므로 평균 배송일과는 차이가 발생할 수 있습니다.
+                    </li>
+   
+            </ul>
+        </div>
+        </div>
+
+        <div id="review" class="aclass">
+            <ul>
+                <li><a href="#detail">
+                    상품상세정보
+                </a></li>
+                <li><a href="#post">
+                    배송안내
+                </a></li>
+                <li><a href="#review">
+                    상품후기
+                </a></li>
+                <li><a href="#qna">
+                    상품문의
+                </a></li>
+            </ul>
+            <h2>상품후기</h2>
+            <div class="textbox textboxd">
+                <a href="#" class="review rrr">상품후기 전체보기</a>
+                <a href="#" class="review">상품후기 작성하기</a>
+                <table>
+                    <tr>
+                        <td>*****</td>  
+                        <td>후기 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>후기 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>후기 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>후기 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>후기 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                </table>
+                <!-- <button id="page">1</button> -->
+                <ul>
+                    <li><a href="#review">1</a></li>
+                    <li><a href="#review">2</a></li>
+                    <li><a href="#review">3</a></li>
+                    <li><a href="#review">4</a></li>
+                    <li><a href="#review">5</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="qna" class="aclass">
+            <ul>
+                <li><a href="#detail">
+                    상품상세정보
+                </a></li>
+                <li><a href="#post">
+                    배송안내
+                </a></li>
+                <li><a href="#review">
+                    상품후기
+                </a></li>
+                <li><a href="#qna">
+                    상품문의
+                </a></li>
+            </ul>
+            <h2>상품문의</h2>
+            <div class="textbox textboxd">
+                <a href="#" class="review rrr">자주하는 질문FAQ</a>
+                <a href="#" class="review">상품문의 작성하기</a>
+                <table>
+                    <tr>
+                        <td>*****</td>  
+                        <td>문의 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>문의 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>문의 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>문의 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                    <tr>
+                        <td>*****</td>  
+                        <td>문의 제목</td>  
+                        <td>id</td>  
+                    </tr>
+                </table>
+                <!-- <button id="page">1</button> -->
+                <ul>
+                    <li><a href="#qna">1</a></li>
+                    <li><a href="#qna">2</a></li>
+                    <li><a href="#qna">3</a></li>
+                    <li><a href="#qna">4</a></li>
+                    <li><a href="#qna">5</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="ul">
+            <ul>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">자주하는질문 FAQ</a></li>
+                <li><a href="#">상품문의</a></li>
+                <li><a href="#">주문조회</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">배송/반품/교환안내</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+
+            </ul>
+            <ul style="margin-left:125px; margin-top: 15px; line-height: 10px;">
+                <li>평일 AM 10:00 ~ PM 06:00  점심시간  PM 12:00 ~01:00  </li>
+                <li>토,일 공휴일 휴무</li>
+                <li>주소 : 경기도 안산시 단원구 고잔2길 코스모프라자 6층</li>
+                <li>입금계좌 : 012-345678-90-123 기업</li>
+                <li>고객센터 : 031-1234-5678 , 080-1234-5678</li>
+            </ul>
+        </div>
+
+
+    </footer>
+</body>
+</html>
