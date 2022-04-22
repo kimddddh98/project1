@@ -67,6 +67,30 @@
     #login li{
         float: left;
         margin: 7px 0 0 16px;
+        position: relative;
+    }
+    #toggle{
+        display: none;
+        width: 250px;
+        height: 50px;
+        position: absolute;
+        top:0;
+        left: -260px;
+        z-index: 5;
+    }
+    #toggle input{
+        width: 200px;
+        height: 48%;
+        margin-bottom: 5px;
+    }
+    #toggle button{
+        float: right;
+        height: 40px;
+        margin: 3px 0 5px 0;
+        background-color: #87c3fc;
+        color: #fff;
+        border-radius: 5px;
+        border-color: none;
     }
 
     nav{
@@ -577,5 +601,3 @@ input[type="radio"]:checked{
         input::-webkit-search-results-button,
 
         input::-webkit-search-results-decoration { display: none; }
-
-

@@ -9,6 +9,7 @@ section{
     height: 600px;
     margin: 20px auto;
     border-top:1px solid #333;
+    position: relative;
 }
 #a{
     width: 1200px;
@@ -55,6 +56,8 @@ section{
 }
 #a>#form>form>input[type="radio"]:nth-of-type(2){
     background-image: url("../img/sub/r.png");
+
+
 }
 
 #a>#form>form>input:nth-of-type(1){
@@ -136,7 +139,70 @@ section{
 .size button:active{background-color: #333;
     color: white;
 }
-
+/* <ㅡㅡ팝업창 시작ㅡㅡ> */
+#guide{
+    width: 800px;
+    margin: 0 auto;
+    height: 600px;
+    display: none;
+    position:absolute;
+    z-index: 100;
+    overflow: auto;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: #fff;
+}
+#guide table{
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+#guide table th{
+    background-color: #999;
+    padding: 10px 0px;
+}
+#guide table td{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+#guide h1{
+     text-align: center;
+ }
+ #guide #i{
+     text-align: center;
+     position: relative;
+ }
+ #guide a{
+    display: inline-block;
+    background-color: black;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}   
+#guide caption{
+    font-weight: bold;
+    margin: 10px 0;
+}
+#ii td{
+    padding: 30px;
+    
+}
+#iii{
+    width: 116px;
+}
+#close{
+    position: absolute;
+    right: 20px;
+    padding: 0 5px;
+    background-color: #ccc;
+    color: #f1f1f1;
+    border: 1px solid #aaa;
+}
+/* <ㅡㅡ팝업창끝ㅡㅡ> */
 .payment{
     display: flex;
     flex-direction: column;
@@ -190,7 +256,6 @@ section{
     cursor: pointer;     
     border-radius: 5px; 
     font-weight: bold;
-
 }
 
 #buybt input[type="button"]:hover{
