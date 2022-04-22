@@ -22,6 +22,9 @@
             $("#imgbuttona").click(function(){
                 $("input:radio[name='a']:radio[value='a']").prop('checked',true);
             });
+            $("#login ul li a:first-of-type").click(function(){
+                $("#toggle").toggle();
+            });
         });
         
     </script>
@@ -30,16 +33,23 @@
     <header>
         <div id="login">
             <ul>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">장바구니(0)</a></li>
-                <li><a href="#">고객센터</a></li>
-                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">로그인</a>
+                <div id="toggle">
+                    <button type="submit">로그인</button>
+
+                    <input type="text" name="" id="" placeholder="ID">
+                    <input type="password" name="" id="" placeholder="PASSWORD">
+                </div></li>
+                <li><a href="/sub.html">회원가입</a></li>
+                <li><a href="/sub.html">장바구니(0)</a></li>
+                <li><a href="/sub.html">고객센터</a></li>
+                <li><a href="/sub.html">마이페이지</a></li>
                 
             </ul>
+           
         </div>
         <div id="logo">
-            <a href="#">
+            <a href="/sub.html">
             <img src="img/common/logo.png" alt="">
 
             </a>
@@ -48,53 +58,53 @@
         <nav>
             <ul>
                 <li class="menu">
-                    <a href="#">축구화</a>
+                    <a href="/sub.html">축구화</a>
                     <ul>
-                        <li><a href="#">브랜드</a></li>
-                        <li><a href="#">그라운드</a></li>
+                        <li><a href="/sub.html">브랜드</a></li>
+                        <li><a href="/sub.html">그라운드</a></li>
                     </ul>
                 </li>
-                <li class="menu"><a href="#">의류</a>
+                <li class="menu"><a href="/sub.html">의류</a>
                     <ul>
-                        <li><a href="#">상의</a></li>
-                        <li><a href="#">하의</a></li>
-                        <li><a href="#">트레이닝복</a></li>
-                        <li><a href="#">기능성</a></li>
+                        <li><a href="/sub.html">상의</a></li>
+                        <li><a href="/sub.html">하의</a></li>
+                        <li><a href="/sub.html">트레이닝복</a></li>
+                        <li><a href="/sub.html">기능성</a></li>
                     </ul>
                 </li>
-                <li class="menu"><a href="#">유니폼</a>
+                <li class="menu"><a href="/sub.html">유니폼</a>
                     <ul>
-                        <li><a href="#">대표팀</a></li>
-                        <li><a href="#">클럽팀</a></li>
-                        <li><a href="#">반팔</a></li>
-                        <li><a href="#">긴팔</a></li>
-                        <li><a href="#">쇼츠</a></li>
+                        <li><a href="/sub.html">대표팀</a></li>
+                        <li><a href="/sub.html">클럽팀</a></li>
+                        <li><a href="/sub.html">반팔</a></li>
+                        <li><a href="/sub.html">긴팔</a></li>
+                        <li><a href="/sub.html">쇼츠</a></li>
 
 
                     </ul>
                 </li>
-                <li class="menu"><a href="#">용품</a>
+                <li class="menu"><a href="/sub.html">용품</a>
                     <ul>
-                        <li><a href="#">축구공</a></li>
-                        <li><a href="#">보호대</a></li>
-                        <li><a href="#">가방</a></li>
-                        <li><a href="#">GK용품</a></li>
-                        <li><a href="#">기타용품</a></li>
+                        <li><a href="/sub.html">축구공</a></li>
+                        <li><a href="/sub.html">보호대</a></li>
+                        <li><a href="/sub.html">가방</a></li>
+                        <li><a href="/sub.html">GK용품</a></li>
+                        <li><a href="/sub.html">기타용품</a></li>
                     </ul>
                 </li>
                 <li class="menu"><a href="#">WOMEN/KIDS</a>
                     <ul>
-                        <li><a href="#">축구화</a></li>
-                        <li><a href="#">의류</a></li>
-                        <li><a href="#">용품</a></li>
+                        <li><a href="/sub.html">축구화</a></li>
+                        <li><a href="/sub.html">의류</a></li>
+                        <li><a href="/sub.html">용품</a></li>
                     </ul>
                 </li>
-                <li class="menu"><a href="#">브랜드관</a>
+                <li class="menu"><a href="/sub.html">브랜드관</a>
                     <ul>
-                        <li><a href="#">나이키</a></li>
-                        <li><a href="#">아디다스</a></li>
-                        <li><a href="#">미즈노</a></li>
-                        <li><a href="#">브랜드전체</a></li>
+                        <li><a href="/sub.html">나이키</a></li>
+                        <li><a href="/sub.html">아디다스</a></li>
+                        <li><a href="/sub.html">미즈노</a></li>
+                        <li><a href="/sub.html">브랜드전체</a></li>
 
                     </ul></li>
             </ul>
@@ -103,7 +113,7 @@
         <div id="search">
             <input type="search" name="search" placeholder="search" maxlength="10">
            
-            <input type="image" src="img//main/search.png" alt="검색">
+            <input type="image" src="img/main/search.png" alt="검색">
         </div>
         </form>
         
@@ -148,32 +158,32 @@
             <img src="img/main/foot.png" alt="foot">
             </a>
             <div class="footimg">
-                <a href="#">
+                <a href="sub.html">
             축구화
 
                 </a>
             </div>
         </div>
         <div id="clothes">
-            <a href="#">
+            <a href="sub.html">
             <img src="img/main/clo.png" alt="clo"></a>
 
            
             <div class="cloimg">
-                <a href="#">
+                <a href="sub.html">
                 의류
 
                 </a>
             </div>
         </div>
         <div id="nike">
-            <a href="#"><img src="img/main/nike1white.png" alt="nike"></a>
+            <a href="sub.html"><img src="img/main/nike1white.png" alt="nike"></a>
         </div>
         <div id="adidas">
-            <a href="#"><img src="img/main/adidaswhite.png" alt="adidas"></a>
+            <a href="sub.html"><img src="img/main/adidaswhite.png" alt="adidas"></a>
         </div>
         <div id="mizuno">   
-            <a href="#"><img src="img/main/mizunowhite.png" alt="mizuno"></a>
+            <a href="sub.html"><img src="img/main/mizunowhite.png" alt="mizuno"></a>
         </div>
         
     </div>
@@ -194,22 +204,14 @@
         <div class="club">
             <img src="img/main/Layer26.png" alt="col">
             <p>클럽팀 컬렉션</p>
-            <a href="#">
+            <a href="/sub.html">
             <div class="buy">구매하기</div>
 
             </a>
         </div>
     </div>
     <aside>
-        <div class="left">
-            <a href="#">
-            &#60;
-            
-            </a>
-            &nbsp;
-                <a href="#">
-                    &#62;
-                </a></div>
+       
         <h1>
         BEST 축구화
         </h1>
@@ -234,7 +236,7 @@
 
             
                 <img src="img/main/nike1.png" alt="">
-                <a href="#">
+                <a href="/sub.html">
                     <p>팬텀 GT2 엘리트 DF FG<br>
                         319,000 원
                     </p>
@@ -247,7 +249,7 @@
 
             
                 <img src="img/main/adidas.png" alt="">
-               <a href="#">
+               <a href="/sub.html">
                 <p>X 스피드 플로우.1 HG<br>
                     319,000 원
                 </p>
@@ -260,27 +262,23 @@
 
             
                 <img src="img/main/mizuno.png" alt="">
-                <a href="#">
+                <a href="/sub.html">
                     <p>모렐리아 네오 III<br>
                         319,000 원
                     </p>
                 </a>
                 </div>
         </div>
-        
+        <div class="left">
+            <button>&#60;</button>
+            <button>&#62;</button>
+
+        </div>
      
         
     </aside>
     <aside>
-        <div class="left">
-            <a href="#">
-            &#60;
-
-            </a>
-            &nbsp;
-                <a href="#">
-                    &#62;
-                </a></div>
+  
         <h1>
         BEST 의류
         </h1>
@@ -292,7 +290,7 @@
 
             
             <img src="img/main/nike1.png" alt="">
-           <a href="#">
+           <a href="sub.html">
             <p>2020 스타디움 홈 저지 S/S<br>
                 319,000 원
             </p>
@@ -305,7 +303,7 @@
 
             
                 <img src="img/main/nike1.png" alt="">
-               <a href="#">
+               <a href="sub.html">
                 <p>2020 스타디움 어웨이 저지 S/S<br>
                     319,000 원
                 </p>
@@ -318,7 +316,7 @@
 
             
                 <img src="img/main/adidas.png" alt="">
-                <a href="#">
+                <a href="sub.html">
                     <p>트레이닝 팬츠 (HA6365)<br>
                         319,000 원
                     </p>
@@ -331,7 +329,7 @@
 
             
                 <img src="img/main/adidas.png" alt="">
-                <a href="#">
+                <a href="sub.html">
                     <p>콘디보 20 트레이닝 탑 L/S<br>
                         319,000 원
                     </p>
@@ -339,12 +337,16 @@
                 </div>
         </div>
         
-     
+        <div class="left">
+            <button>&#60;</button>
+            <button>&#62;</button>
+
+        </div>
         
     </aside>
 
     <div id="xxx">
-        <a href="#">
+        <a href="sub.html">
         <img src="img/main/merc1.jpg" alt="">
 
         </a>
@@ -356,7 +358,7 @@
             발의 움직임에 따라 유연하게 반응하는 에어로트랙 존(Aerotrak Zone)은<br>
             탁월한 그라운드 접지력을 제공하고 , 발을 감싸는 플라이니트 구조가<br>
             폭발적인 가속력과 완벽한 볼 컨트롤을 선사합니다.</p>
-            <a href="#">
+            <a href="sub.html">
                구매하기
             </a>
             
@@ -369,7 +371,7 @@
                 팬텀 베놈은 발등의 블레이드 패턴으로 볼의 궤적을 제어할 수 있는 스핀을 만들고, <br>
                 앞꿈치와 갑피의 앞부분에 몰딩 된 마이크로 텍스처로 정교한 터치까지 제공합니다.
             </p>
-                <a href="#">구매하기
+                <a href="sub.html">구매하기
                     
                 </a>
                 
@@ -383,7 +385,7 @@
                     그리고 정확한 컨트롤을 위한 가죽의 터치감에 몰드 다이아몬드 텍스처를 더해 <br>
                     경기 내내 최선의 기량을 발휘할 수 있도록 도와줍니다.
                 </p>
-                    <a href="#">
+                    <a href="sub.html">
                         구매하기
                     </a>
                     
@@ -392,20 +394,20 @@
     <footer>
         <div class="ul">
             <ul>
-                <li><a href="#">고객센터</a></li>
-                <li><a href="#">자주하는질문 FAQ</a></li>
-                <li><a href="#">상품문의</a></li>
-                <li><a href="#">주문조회</a></li>
+                <li><a href="sub.html">고객센터</a></li>
+                <li><a href="sub.html">자주하는질문 FAQ</a></li>
+                <li><a href="sub.html">상품문의</a></li>
+                <li><a href="sub.html">주문조회</a></li>
             </ul>
             <ul>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">이용안내</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">배송/반품/교환안내</a></li>
+                <li><a href="sub.html">이용약관</a></li>
+                <li><a href="sub.html">이용안내</a></li>
+                <li><a href="sub.html">개인정보처리방침</a></li>
+                <li><a href="sub.html">배송/반품/교환안내</a></li>
             </ul>
             <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">이벤트</a></li>
+                <li><a href="sub.html">공지사항</a></li>
+                <li><a href="sub.html">이벤트</a></li>
 
             </ul>
             <ul style="margin-left:125px; margin-top: 15px; line-height: 10px;">

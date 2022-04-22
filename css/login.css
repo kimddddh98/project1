@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
- #container{
+ .container{
      width: 100%;
      height: 700px;
      margin: 0 auto;
@@ -10,7 +10,12 @@
      justify-content: center;
      align-items: center ;
  }
- #section{
+ .container:nth-of-type(2){
+     height: 350px;
+     border: none;
+     align-items: flex-start;
+ }
+ .item{
      width: 800px;
      height: 600px;
     border: 1px solid black;
@@ -20,10 +25,13 @@
     align-items: center;
     flex-wrap: nowrap;
 }
-#section h3{
+.container:nth-of-type(2) .item{
+    height: 300px;
+}
+.item h3{
     align-self:center;
 }
-#pass{
+.pass{
     width: 600px;
     height: 180px;
     flex-basis: 150px;
@@ -36,11 +44,11 @@
     padding-bottom: 50px;
 
 }
-#pass input{
+.pass input{
 width: 400px;
 height: 45px;
 }
-#pass button[type="submit"]{
+.pass button[type="submit"]{
     width: 150px;
     height: 140px;
     align-self: flex-start;
@@ -48,7 +56,7 @@ height: 45px;
     border: none;
     color: #fff;
 }
-#pass input[type="checkbox"]{
+.pass input[type="checkbox"]{
     width: 40px;
     height: 20px;
 }
@@ -59,8 +67,13 @@ height: 45px;
     text-align: center;
     padding: 20px 0;
 }
-#section>div:nth-of-type(2){
+.item>div:nth-of-type(2){
     background-color: #fee500;
+    color: #000000 85%;
+
+}
+.item>div:nth-of-type(3){
+    background-color: #1ec800;
     color: #000000 85%;
 
 }

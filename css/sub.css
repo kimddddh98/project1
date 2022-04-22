@@ -123,7 +123,7 @@ section{
     margin: 40px 0 20px 0;
 }
 .size{
-    margin: -100px 0 0px 220px;
+    margin: -100px 0 0px 210px;
 }
 .size button{
     padding: 10px 18px;
@@ -133,11 +133,13 @@ section{
     cursor: pointer;      
     border-radius: 5px;  
 }
-.size button:focus{background-color: #333;
+.size button:focus{background-color: #87c3fc;
     color: white;
 }
-.size button:active{background-color: #333;
+
+.size button:active{background-color: #87c3fc;
     color: white;
+
 }
 /* <ㅡㅡ팝업창 시작ㅡㅡ> */
 #guide{
@@ -196,6 +198,7 @@ section{
 }
 #close{
     position: absolute;
+    top:5px;
     right: 20px;
     padding: 0 5px;
     background-color: #ccc;
@@ -248,7 +251,7 @@ section{
 
 
 #buybt input[type="button"]{
-    background-color: black;
+    background-color:#000;
     color: #fff;
     padding: 30px 60px;
     font-size: large;
@@ -256,12 +259,13 @@ section{
     cursor: pointer;     
     border-radius: 5px; 
     font-weight: bold;
+    border: none;
 }
 
 #buybt input[type="button"]:hover{
-    background-color: #666;
+    background-color: #87c3fc;
     border:none;
-    color:#87c3fc
+    color:#fff
 }
 #buybt{
     margin: 0 0 0 60px;
@@ -269,19 +273,21 @@ section{
 /* 상품상세정보~ 상품문의 */
 .aclass h2{
     float: left;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 20px 50px;
 }
 .textbox{
     font-size: 14px;
     height: 600px;
     margin-bottom: 30px;
+    margin-left:0px;
 }
 #detail .textbox li, #post .textbox li{
     float: left;
-    margin: 20px 0;
+    margin: 20px 50px;
     width: 1200px;
     
 }
+
 #textb{
     height: 550px;
 }
