@@ -115,12 +115,15 @@ section{
     padding: 0px 0 0 30px;
 }
 
-#shop h3, #shop a{
+#shop h3{
     display: block;
     padding-left: 80px;
-}
-#shop h3{
     margin: 40px 0 20px 0;
+
+}
+
+#shop a{
+    padding-left: 45px;
 }
 .size{
     margin: -100px 0 0px 210px;
@@ -135,11 +138,21 @@ section{
 }
 .size button:focus{background-color: #87c3fc;
     color: white;
+    border-color: #87c3fc;
 }
 
 .size button:active{background-color: #87c3fc;
     color: white;
+    border-color: #87c3fc;
 
+}
+#click::before{
+    content: "?";
+    border: 1px solid #87c3fc;
+    padding: 0 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    color: #87c3fc;
 }
 /* <ㅡㅡ팝업창 시작ㅡㅡ> */
 #guide{
