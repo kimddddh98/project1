@@ -123,7 +123,7 @@ section{
 }
 
 #shop a{
-    padding-left: 45px;
+    padding-left: 20px;
 }
 .size{
     margin: -100px 0 0px 210px;
@@ -283,6 +283,44 @@ section{
 #buybt{
     margin: 0 0 0 60px;
 }
+/* 상세정보이미지 */
+#progress{
+    width: 1200px;
+    margin: 0 auto;
+}
+#progress img{
+    width: 1200px;
+}
+iframe{
+    margin-left:200px ;
+}
+#ad{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    /* flex-wrap: wrap; */
+}
+#ad>div{
+    display: flex;
+    flex-direction: column;
+}
+#ad>div img{
+    width: 1200px;
+    
+}
+#ad>h1{
+    text-align: center;
+    padding: 30px 0;
+}
+#ad h2,p{
+    text-align: center;
+    margin: 5px 0;
+    
+}
+#ad p{
+    padding: 0 0 20px 0;
+}
 /* 상품상세정보~ 상품문의 */
 .aclass h2{
     float: left;
@@ -309,6 +347,9 @@ section{
 #detail{
     margin: 0 auto;
     width: 1200px;
+}
+#detail img{
+    width: 800px;
 }
 #detail>ul>li{
     box-sizing: border-box;
