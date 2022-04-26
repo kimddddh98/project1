@@ -17,17 +17,33 @@ section{
     margin: 0 auto;
 }
 #img{
-    width: 500px;
-    height: 500px;
-    /* float: left; */
-    /* position: relative; */
-    /* margin: 70px 70px; */
+    width: 600px;
+    height: 600px;
+ 
 }
-#img img{
-    width: 450px;
-    height: 450px;
-    margin: 70px 0 0 80px;
+#product{
+    width: 100%;
+}
+#img>img{
+    width: 439px;
+    height: 439px;
+    margin: 30px 0 0 100px;
     position: absolute;
+}
+#img #product img{
+    width: 108px;
+    height: 103px;
+}
+#product li{
+    width: 110px;
+    float: left;
+    margin: 470px 0 0 0px;
+}
+#product li:hover{
+    cursor: pointer;
+}
+#product ul{
+    margin-left: 100px;
 }
 #form{
     width: 600px;
@@ -35,7 +51,7 @@ section{
     float: left;
     position: relative;
 }
-#img img{
+/*버튼슬라이더 #img>img{
     opacity: 0;
 }
 #a>#form>form>input[value="right"]:checked~#img img[alt="one"]{
@@ -72,7 +88,7 @@ section{
     top: 45%;
     right: 0%;
     z-index: 5;
-}
+} 버튼 슬라이더 */
 
 #shop{
     width: 600px;
@@ -312,6 +328,7 @@ iframe{
 #ad>h1{
     text-align: center;
     padding: 30px 0;
+    margin-top: -40px;
 }
 #ad h2,p{
     text-align: center;

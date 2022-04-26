@@ -125,6 +125,18 @@
             $("#close").click(function(){
                 $("#guide").hide();
             });
+            $("#product li:first-child").mouseover(function(){
+                $(".best1").attr("src","/img/best/BEST1.jpg");
+            });
+            $("#product li:nth-of-type(2)").mouseover(function(){
+                $(".best1").attr("src","/img/best/BEST1_1.jpg");
+            });
+            $("#product li:nth-of-type(3)").mouseover(function(){
+                $(".best1").attr("src","/img/best/BEST1_2.jpg");
+            });
+            $("#product li:nth-of-type(4)").mouseover(function(){
+                $(".best1").attr("src","/img/best/BEST1_3.jpg");
+            });
         });
     </script>
 </head>
@@ -391,14 +403,33 @@
         <!-- <ㅡㅡ팝업창 끝ㅡㅡ> -->
         <div id="a">
             <div id="form">
-            <form>
-                <input type="radio" value="left" name="img" checked>
-                <input type="radio" value="right" name="img">
+            <!-- <form> -->
+                <!-- <input type="radio" value="left" name="img" checked>
+                <input type="radio" value="right" name="img"> -->
                 <div id="img">
-                    <img src="img/best/BEST1.jpg" alt="one">
-                    <img src="img/best/best1_1.jpg" alt="two">
+                    <img src="img/best/best1_1.jpg" alt="two" class="best1">
+
+                    <!-- <img src="img/best/BEST1.jpg" alt="one"> -->
+                    <div id="product">
+                        <ul>
+                            <li>
+                                <img src="img/best/BEST1_1.jpg" alt="best1">
+                            </li>
+                            <li>
+                                <img src="img/best/BEST1.jpg" alt="best2">
+
+                            </li>
+                            <li>
+                                <img src="img/best/BEST1_2.jpg" alt="best3">
+
+                            </li>
+                            <li>
+                                <img src="img/best/BEST1_3.jpg" alt="best4">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
             <div id="shop">
                 <img src="img/sub/nike.png" alt="">
