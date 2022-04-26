@@ -315,11 +315,11 @@ iframe{
 }
 #ad h2,p{
     text-align: center;
-    margin: 5px 0;
+    margin: 20px 0 0 0;
     
 }
 #ad p{
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
 }
 /* 상품상세정보~ 상품문의 */
 .aclass h2{
@@ -329,7 +329,7 @@ iframe{
 .textbox{
     font-size: 14px;
     height: 600px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left:0px;
 }
 #detail .textbox li, #post .textbox li{
