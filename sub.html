@@ -54,13 +54,23 @@
             $(".size button").click(function(){
               $("section").css("height","700px");
 
-            //   $("#product ul:nth-of-type(2)").css("display","block")
-            //   $("#product ul:nth-of-type(2) li").css("margin","570px 0 0 0")
+              $("#product ul:nth-of-type(2)").css("display","block");
+              $("#product ul:nth-of-type(2) li").css("margin","575px 0 0 0");
+              $("#product ul:nth-of-type(1)").css("display","block");
+              $("#product ul:nth-of-type(1)").css("position","absolute");
+              $("#product ul:nth-of-type(1)").css("z-index","99");
 
+
+            //   $("#product ul:nth-of-type(1) li").css("margin","470px 0 0 0");
+              $("#product button").css("display","none");
             });
             $(".top button").click(function(){
                 $(".payment").hide();
                 $("section").css("height","600px");
+                $("#product ul:nth-of-type(2)").css("display","none")
+                $("#product ul:nth-of-type(2) li").css("margin","470px 0 0 0")
+                $("#product button").css("display","block");
+
             });
             // 리뷰,문의
             $("#review .textboxd ul li a").click(function(){
@@ -132,7 +142,7 @@
                 $('html, body').css({'overflow': 'auto'});
 
             });
-            $("#product li:first-child").mouseover(function(){
+            $("#product ul:nth-of-type(1) li:nth-of-type(1)").mouseover(function(){
                 $(".best1").attr("src","img/best/best1_1.jpg");
             });
             $("#product li:nth-of-type(2)").mouseover(function(){
@@ -430,13 +440,9 @@
         <!-- <ㅡㅡ팝업창 끝ㅡㅡ> -->
         <div id="a">
             <div id="form">
-            <!-- <form> -->
-                <!-- <input type="radio" value="left" name="img" checked>
-                <input type="radio" value="right" name="img"> -->
                 <div id="img">
                     <img src="img/best/best1_1.jpg" alt="two" class="best1">
 
-                    <!-- <img src="img/best/BEST1.jpg" alt="one"> -->
                     <div id="product">
                         <button>
                             &#60;
@@ -478,7 +484,6 @@
                         </ul>
                     </div>
                 </div>
-            <!-- </form> -->
         </div>
             <div id="shop">
                 <img src="img/sub/nike.png" alt="">
@@ -986,12 +991,12 @@
                 <a href="#" class="review">상품문의 작성하기</a>
                 <table>
                     <tr>
-                        <td>접수</td>  
+                        <td>답변대기</td>  
                         <td>문의 제목</td>  
                         <td>작성자</td>  
                     </tr>
                     <tr>
-                        <td>접수</td>  
+                        <td>답변대기</td>  
                         <td>문의 제목</td>  
                         <td>작성자</td>  
                     </tr>
