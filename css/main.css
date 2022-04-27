@@ -243,14 +243,14 @@ input[value="b"]{
     bottom:  50px;
     left: 51%;
 }
-input[value="c"]{
+/* input[value="c"]{
     bottom:  50px;
     left: 51%;
 }
 input[value="d"]{
     bottom:  50px;
     left: 54%;
-}
+} */
 input[type="radio"]{
     appearance: none;
     border: 1px solid #fff;
