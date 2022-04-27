@@ -39,11 +39,33 @@ section{
     float: left;
     margin: 470px 0 0 0px;
 }
+#product ul:nth-of-type(2){
+    position: absolute;
+    display: none;
+}
 #product li:hover{
     cursor: pointer;
 }
 #product ul{
     margin-left: 100px;
+}
+#product button{
+    border: none;
+    background: none;
+    font-size: 30px;
+    opacity: 0.4;
+    cursor: pointer;
+    font-weight: bold;
+}
+#product button:first-of-type{
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+}
+#product button:nth-of-type(2){
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
 }
 #form{
     width: 600px;
@@ -176,7 +198,8 @@ section{
     margin: 0 auto;
     height: 600px;
     display: none;
-    position:absolute;
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+    position:fixed;
     z-index: 100;
     overflow: auto;
     top: 50%;

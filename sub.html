@@ -53,6 +53,10 @@
             });
             $(".size button").click(function(){
               $("section").css("height","700px");
+
+            //   $("#product ul:nth-of-type(2)").css("display","block")
+            //   $("#product ul:nth-of-type(2) li").css("margin","570px 0 0 0")
+
             });
             $(".top button").click(function(){
                 $(".payment").hide();
@@ -121,9 +125,12 @@
             });
             $("#click").click(function(){
                 $("#guide").show();
+                $('html, body').css({'overflow': 'hidden'});
             });
             $("#close").click(function(){
                 $("#guide").hide();
+                $('html, body').css({'overflow': 'auto'});
+
             });
             $("#product li:first-child").mouseover(function(){
                 $(".best1").attr("src","img/best/BEST1_1.jpg");
@@ -136,6 +143,26 @@
             });
             $("#product li:nth-of-type(4)").mouseover(function(){
                 $(".best1").attr("src","img/best/BEST1_3.jpg");
+            });
+            $("#product ul:nth-of-type(2) li:nth-of-type(1)").mouseover(function(){
+                $(".best1").attr("src","img/best/BEST1_4.jpg");
+            });
+            $("#product ul:nth-of-type(2) li:nth-of-type(2)").mouseover(function(){
+                $(".best1").attr("src","img/best/BEST1_5.jpg");
+            });
+            $("#product ul:nth-of-type(2) li:nth-of-type(3)").mouseover(function(){
+                $(".best1").attr("src","img/best/BEST1_6.jpg");
+            });
+            $("#product ul:nth-of-type(2) li:nth-of-type(4)").mouseover(function(){
+                $(".best1").attr("src","img/best/BEST1_7.jpg");
+            });
+            $("#product button:first-of-type").click(function(){
+                $("#product ul:nth-of-type(1)").show();
+                $("#product ul:nth-of-type(2)").hide();
+            });
+            $("#product button:nth-of-type(2)").click(function(){
+                $("#product ul:nth-of-type(2)").show();
+                $("#product ul:nth-of-type(1)").hide();
             });
         });
     </script>
@@ -411,6 +438,12 @@
 
                     <!-- <img src="img/best/BEST1.jpg" alt="one"> -->
                     <div id="product">
+                        <button>
+                            &#60;
+                        </button>
+                        <button>
+                            &#62;
+                        </button>
                         <ul>
                             <li>
                                 <img src="img/best/BEST1_1.jpg" alt="best1">
@@ -425,6 +458,22 @@
                             </li>
                             <li>
                                 <img src="img/best/BEST1_3.jpg" alt="best4">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/best/best1_4.jpg" alt="best1">
+                            </li>
+                            <li>
+                                <img src="img/best/best1_5.jpg" alt="best2">
+
+                            </li>
+                            <li>
+                                <img src="img/best/best1_6.jpg" alt="best3">
+
+                            </li>
+                            <li>
+                                <img src="img/best/BEST1_7.jpg" alt="best4">
                             </li>
                         </ul>
                     </div>
