@@ -17,53 +17,6 @@
     font-weight: normal;
     font-style: normal;
     }
-
-
-    
-    *{  box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        
-    }
-    ul,ol,li{
-        list-style: none;
-    }
-    a{ text-decoration: none;
-        color: #333;
-    }
-    a:visited{
-        color: #333;
-    }
-    a:hover{color: lightskyblue}
-    header{
-        width: 1200px;
-        height: 140px;
-        position: relative;
-        margin: 0 auto;
-    font-family: 'IBMPlexSansKR-Regular';
-
-        }
-       
-
-
-    #logo{
-        width:215px;
-        height: 50px;
-        float: left;
-        margin: 50px 0 0 50px ;
-    }
-    #logo img{
-        width: 100%;
-        height: 100%;
-    }
-    #login{
-        width:335px;
-        height: 30px;
-        float: right;
-        font-size: 13px;
-    font-family: 'IBMPlexSansKR-Regular';
-        
-        }
     #login li{
         float: left;
         margin: 7px 0 0 16px;
@@ -94,92 +47,7 @@
         border-radius: 5px;
         border-color: #87c3fc;
     }
-
-
-    nav{
-        width: 750px;
-        height: 25px;
-        font-size: 18px;
-        position: absolute;
-        top: 60px;
-        left: 280px;
-    }
-    nav li{
-        font-family: 'IBMPlexSansKR-Regular';
-        font-weight: bold;
-    }
-    .menu{
-        display: inline-block;
-        padding: 5px 25px;
-    }
-    nav ul li a{
-        display:inline-block
-    }
-    nav ul li{
-        display: inline-block;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    nav ul li ul li{
-        display: block;
-        padding: 10px 0;
-    }
-  
- 
-    nav ul li ul{
-        position: absolute;
-        z-index: 100;
-        margin: 0;
-        width: 100%;
-        top:37px;
-        left:0px;
-         display: none;
-       
-    }
-    nav ul li:hover ul{
-        display: block;
-        background-color: rgba(6,6,6,0.8);
-       
-    }
-    nav ul li:hover{
-        background-color:#87c3fc;
-    }
-
-    nav ul li:hover a{
-        color: #fff;
-    }
-    #search{
-        width:250px;
-        height: 35px;
-        position:absolute;
-        right: 0px;
-        top:60px;
-
-        
-    }
-  
-    input[type="search"]{
-        width: 250px;
-        height: 35px;
-        border-radius: 40px;
-        border:2px solid #87c3fc;
-        padding-left: 20px ;
-        padding-bottom: 3px;
-    font-family: 'IBMPlexSansKR-Regular';
-
-     
-    }
-    input[type="image"]{
-        width: 30px;
-        height: 25px;
-        position: absolute;
-        right: 20px;
-        top: 5px;
-    }
-
-
+   
     #slider{
         width: 100%;
         height: 560px;
@@ -577,47 +445,6 @@ input[type="radio"]:checked{
         background-color: #87c3fc;
         color: #fff;
     }
-    footer{
-        width: 100%;
-        height: 280px;
-        background-color: #000;
-        font-size: 14px;
-        float: left;
-    }
-    footer div{
-    width: 1200px;
-    height: 270px;
-    margin: 0 auto;
-    padding: 10px 0 0 0;    
-    color: white;       
-    }
-    
-    footer ul{
-        margin: 10px 40px 0 20px;
-        float: left;
-    }
-    footer li{
-        padding: 15px;
-    }
-    .ul a{color: white;}
-    .ul a:hover{color:#87c3fc;}
-    input:focus{
-        outline: none;
-    }
-    input[type=search]::-ms-clear {
-        display: none;
-        }
-        input::-ms-clear,
-
-        input::-ms-reveal {display: none; width : 0; height: 0;}
-
-        input::-webkit-search-decoration,
-
-        input::-webkit-search-cancel-button,
-
-        input::-webkit-search-results-button,
-
-        input::-webkit-search-results-decoration { display: none; }
 
 
       
